@@ -19,7 +19,7 @@ cd C:\tool-project\click-flow-license
 部署后线上地址：
 
 ```text
-https://<your-worker-subdomain>.workers.dev
+https://license.shree52388.xyz
 ```
 
 接口：
@@ -84,11 +84,11 @@ npm test
 ## 线上验证
 
 ```bash
-curl https://<your-worker-subdomain>.workers.dev/health
-curl https://<your-worker-subdomain>.workers.dev/config
+curl https://license.shree52388.xyz/health
+curl https://license.shree52388.xyz/config
 ```
 
-如果当前网络无法访问 `workers.dev`，可以在 Cloudflare 控制台查看 Worker 部署状态和日志。
+当前使用自定义域名 `license.shree52388.xyz`。不要依赖 `workers.dev`，部分网络到 `workers.dev` 可能无法连接。
 
 ## 后续开启限制
 

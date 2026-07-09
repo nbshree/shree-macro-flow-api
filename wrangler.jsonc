@@ -7,6 +7,7 @@
 	"name": "click-flow-license",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-07-09",
+	"workers_dev": false,
 	"observability": {
 		"enabled": true,
 	},
@@ -16,6 +17,12 @@
 		{
 			"binding": "APP_CONFIG",
 			"id": "07d5c6e96c75462595d84f6bb0aeab30",
+		},
+	],
+	"routes": [
+		{
+			"pattern": "license.shree52388.xyz",
+			"custom_domain": true,
 		},
 	],
 	/**
