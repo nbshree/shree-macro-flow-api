@@ -1,0 +1,11 @@
+{
+	"enabled": true,
+	"licenseRequired": false,
+	"minVersion": "1.0.0",
+	"notice": "",
+	"cacheTtlHours": 24,
+	"freeLimits": {
+		"maxProfiles": 999,
+		"maxPoints": 9999
+	}
+}
