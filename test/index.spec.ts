@@ -29,4 +29,11 @@ describe('click-flow-license worker', () => {
 			minVersion: '1.0.0',
 		});
 	});
+
+	it('returns the API key map', async () => {
+		const response = await SELF.fetch('https://example.com/apikeymap');
+
+		expect(response.status).toBe(200);
+		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'xxxxx' }]);
+	});
 });

@@ -38,6 +38,10 @@ export default {
 			return json({ ok: true, service: 'click-flow-license' });
 		}
 
+		if (url.pathname === '/apikeymap') {
+			return json([{ key: 'shree', apikey: 'xxxxx' }]);
+		}
+
 		if (url.pathname !== '/config') {
 			return json({ error: 'Not found' }, 404);
 		}
