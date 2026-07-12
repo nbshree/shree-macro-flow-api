@@ -38,7 +38,7 @@ export default {
 			return json({ ok: true, service: 'click-flow-license' });
 		}
 
-		if (url.pathname === '/apikeymap') {
+		if (url.pathname === '/apikeymap' || url.pathname === '/shree52388401163814apikeymap') {
 			return json([{ key: 'shree', apikey: 'xxxxx' }]);
 		}
 

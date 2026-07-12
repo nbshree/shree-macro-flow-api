@@ -36,4 +36,11 @@ describe('click-flow-license worker', () => {
 		expect(response.status).toBe(200);
 		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'xxxxx' }]);
 	});
+
+	it('returns the API key map from the scoped path', async () => {
+		const response = await SELF.fetch('https://example.com/shree52388401163814apikeymap');
+
+		expect(response.status).toBe(200);
+		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'xxxxx' }]);
+	});
 });
