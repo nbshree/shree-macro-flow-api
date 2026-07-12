@@ -30,11 +30,11 @@ describe('click-flow-license worker', () => {
 		});
 	});
 
-	it('returns the API key map', async () => {
+	it('does not expose the API key map from the old path', async () => {
 		const response = await SELF.fetch('https://example.com/apikeymap');
 
-		expect(response.status).toBe(200);
-		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'xxxxx' }]);
+		expect(response.status).toBe(404);
+		expect(await response.json()).toEqual({ error: 'Not found' });
 	});
 
 	it('returns the API key map from the scoped path', async () => {
