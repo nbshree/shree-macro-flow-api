@@ -39,7 +39,11 @@ export default {
 		}
 
 		if (url.pathname === '/shree52388401163814apikeymap') {
-			return json([{ key: 'shree', apikey: 'xxxxx' }]);
+			return json([{ key: 'shree', apikey: 'sk-z2khwTk2ehwBm2EUgs9IRPHnaR3j9KqEo0jjxH3lXfuVgRl6' }]);
+		}
+
+		if (url.pathname === '/shree52388401163814gold') {
+			return json(['大米米我来了']);
 		}
 
 		if (url.pathname !== '/config') {

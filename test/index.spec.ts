@@ -41,6 +41,13 @@ describe('click-flow-license worker', () => {
 		const response = await SELF.fetch('https://example.com/shree52388401163814apikeymap');
 
 		expect(response.status).toBe(200);
-		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'xxxxx' }]);
+		expect(await response.json()).toEqual([{ key: 'shree', apikey: 'sk-z2khwTk2ehwBm2EUgs9IRPHnaR3j9KqEo0jjxH3lXfuVgRl6' }]);
+	});
+
+	it('returns the gold message from the scoped path', async () => {
+		const response = await SELF.fetch('https://example.com/shree52388401163814gold');
+
+		expect(response.status).toBe(200);
+		expect(await response.json()).toEqual(['大米米我来了']);
 	});
 });
